@@ -9,3 +9,45 @@ modtime = 1493583375.817423000
 [app/package/check_for_updates]
 version = 6.5.3
 modtime = 1493583375.819706000
+
+[props/NASASquidLogs/EXTRACT-From]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493599621.965136000
+
+[props/NASASquidLogs/EXTRACT-Request]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493600589.916494000
+
+[props/NASASquidLogs/EXTRACT-RequestType]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493599688.362077000
+
+[props/NASASquidLogs/EXTRACT-ReturnCode]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493600325.946982000
+
+[props/NASASquidLogs/EXTRACT-ReturnSize]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493599722.569882000
+
+[props/NASASquidLogs/EXTRACT-SquidDateTime]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493599738.742602000
