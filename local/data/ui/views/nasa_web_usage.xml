@@ -1,0 +1,41 @@
+<dashboard>
+  <label>NASA Web Usage</label>
+  <description>Summary page for our new Splunk Dashboard</description>
+  <row>
+    <panel>
+      <single>
+        <title>Average Hits Per Day</title>
+        <search>
+          <query>index=main sourcetype=NASASquidLogs | stats count by MonthDay | stats avg(count) AS AvgHitsPerDay | eval AvgHitsPerDay=round(AvgHitsPerDay,2)</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="height">64</option>
+        <option name="underLabel">HITS PER DAY</option>
+      </single>
+    </panel>
+    <panel>
+      <chart>
+        <title>Web Site ReturnCode</title>
+        <search>
+          <query>index=main sourcetype=NASASquidLogs | stats count by ReturnCode</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="charting.chart">pie</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Top Ten Website Requests</title>
+        <search>
+          <query>index=main sourcetype=NASASquidLogs | top 10 Request</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+      </table>
+    </panel>
+  </row>
+</dashboard>

@@ -51,3 +51,19 @@ export = none
 owner = admin
 version = 6.5.3
 modtime = 1493599738.742602000
+
+[props/NASASquidLogs/EXTRACT-MonthDay]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.3
+modtime = 1493604307.472698000
+
+[props/NASASquidLogs/EXTRACT-NASASquid]
+version = 6.5.3
+modtime = 1493679637.640354000
+
+[views/nasa_web_usage]
+owner = admin
+version = 6.5.3
+modtime = 1493774928.508284000
